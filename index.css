@@ -1,7 +1,6 @@
 body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDcNbKR8a0dp9fneHq4nnJO-r657B3iByq-A&usqp=CAU");
-    background-size: 1000px;
-    overflow: hidden;
+    background-color: #E19898;
+    background-image: url("https://images.unsplash.com/photo-1568820577012-d581e7debd21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFpbHdheXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -10,9 +9,13 @@ body {
 .container{
     background: rgba(255, 255, 255, 0.7);
     padding: 10px;
-    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
     border-radius: 10px;
-    border: solid 1px black ;
     
     
 }
@@ -46,4 +49,14 @@ button {
 
 #save-btn {
     background: #57375D;
+}
+
+@media  only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container{
+    width: 60%;
+  }
+  button{
+      width: 70%;
+  }
 }
